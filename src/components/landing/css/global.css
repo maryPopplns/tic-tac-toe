@@ -1,0 +1,18 @@
+#landing {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.ttt_containers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  height: 25vh;
+  border: 3px solid black;
+}
+
+.ttt_letters {
+  border: 3px solid black;
+}

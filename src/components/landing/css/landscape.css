@@ -1,0 +1,14 @@
+@media (max-height: 450px) and (max-width: 850px) {
+  #landing {
+    width: 70vw;
+  }
+
+  .ttt_containers {
+    margin: 1px;
+  }
+
+  .ttt_letters {
+    height: 20vh;
+    width: 20vw;
+  }
+}
