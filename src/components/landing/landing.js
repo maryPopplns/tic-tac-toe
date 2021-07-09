@@ -1,3 +1,5 @@
+import { grid } from "./helpers/grid.js";
+
 function landing() {
   const BODY = document.body;
   const LANDING = document.createElement("div");
@@ -47,6 +49,7 @@ function landing() {
     TAC.append(TAC_CONTAINERS[i]);
     TOE.append(TOE_CONTAINERS[i]);
   }
+  grid();
 }
 
 export { landing };

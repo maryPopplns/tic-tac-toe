@@ -8,3 +8,15 @@
     width: 200px;
   }
 }
+
+@media (min-height: 450px) and (min-width: 450px) {
+  #landing {
+    width: 700px;
+    width: 670px;
+  }
+
+  .ttt_letters {
+    height: 200px;
+    width: 200px;
+  }
+}
