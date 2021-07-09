@@ -32,7 +32,6 @@ function animator() {
   setTimeout(() => {
     const FLICKER = setInterval(() => {
       const SET = unique(15);
-      console.log(SET);
       for (let i = 0; i < SET.length; i++) {
         const RANDOM_ID = TILES[SET[i]];
         // <-->
