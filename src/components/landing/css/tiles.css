@@ -1,7 +1,9 @@
 :root {
-  --animation: tic 3s infinite;
-  --animation1: tac 3s infinite;
-  --animation2: toe 3s infinite;
+  --time: 3s;
+  --tic: tic var(--time) infinite;
+  --tac: tac var(--time) infinite;
+  --toe: toe var(--time) infinite;
+  --clicked: clicked var(--time) infinite;
   --animation-direction: alternate;
 }
 
@@ -11,6 +13,12 @@
 
 .grid_tile:hover {
   opacity: 30%;
+}
+
+@keyframes clicked {
+  100% {
+    background-color: black;
+  }
 }
 
 @keyframes tic {
@@ -92,7 +100,7 @@
 #tic_c22,
 #tic_c23,
 #tic_c24 {
-  animation: var(--animation);
+  animation: var(--tic);
   animation-direction: var(--animation-direction);
 }
 
@@ -178,7 +186,7 @@
 #tac_c22,
 #tac_c23,
 #tac_c24 {
-  animation: var(--animation1);
+  animation: var(--tac);
   animation-direction: var(--animation-direction);
 }
 
@@ -264,6 +272,6 @@
 #toe_e22,
 #toe_e23,
 #toe_e24 {
-  animation: var(--animation2);
+  animation: var(--toe);
   animation-direction: var(--animation-direction);
 }

@@ -1,4 +1,6 @@
 import { grid } from "./helpers/grid.js";
+import { animator } from "./helpers/animator.js";
+import { TILES } from "./helpers/tiles.js";
 
 function landing() {
   const BODY = document.body;
@@ -26,16 +28,16 @@ function landing() {
   // <-->
 
   LANDING.setAttribute("id", "landing");
-  TTT_CONTAINERS.forEach((e) => e.setAttribute("class", "ttt_containers"));
-  TIC_CONTAINERS.forEach((e, i) => {
+  TTT_CONTAINERS.map((e) => e.setAttribute("class", "ttt_containers"));
+  TIC_CONTAINERS.map((e, i) => {
     e.setAttribute("class", "ttt_letters");
     e.setAttribute("id", TIC_IDS[i]);
   });
-  TAC_CONTAINERS.forEach((e, i) => {
+  TAC_CONTAINERS.map((e, i) => {
     e.setAttribute("class", "ttt_letters");
     e.setAttribute("id", TAC_IDS[i]);
   });
-  TOE_CONTAINERS.forEach((e, i) => {
+  TOE_CONTAINERS.map((e, i) => {
     e.setAttribute("class", "ttt_letters");
     e.setAttribute("id", TOE_IDS[i]);
   });
@@ -43,13 +45,17 @@ function landing() {
   // <-->
 
   BODY.prepend(LANDING);
-  TTT_CONTAINERS.forEach((e) => LANDING.append(e));
+  TTT_CONTAINERS.map((e) => LANDING.append(e));
   for (let i = 0; i < 3; i++) {
     TIC.append(TIC_CONTAINERS[i]);
     TAC.append(TAC_CONTAINERS[i]);
     TOE.append(TOE_CONTAINERS[i]);
   }
+
+  // <-->
+
   grid();
+  animator();
 }
 
 export { landing };
