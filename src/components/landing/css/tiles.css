@@ -1,0 +1,262 @@
+.grid_tile {
+  cursor: crosshair;
+}
+
+.grid_tile:hover {
+  opacity: 30%;
+}
+
+@keyframes tic {
+  0% {
+    background-color: #fef619;
+  }
+
+  10% {
+    background-color: #f2eb17;
+  }
+
+  20% {
+    background-color: #e4de16;
+  }
+
+  30% {
+    background-color: #d8d216;
+  }
+
+  40% {
+    background-color: #cbc515;
+  }
+
+  50% {
+    background-color: #bab413;
+  }
+
+  60% {
+    background-color: #cbc515;
+  }
+
+  70% {
+    background-color: #d8d216;
+  }
+
+  80% {
+    background-color: #e4de16;
+  }
+
+  90% {
+    background-color: #f2eb17;
+  }
+
+  100% {
+    background-color: #fef619;
+  }
+}
+
+#tic_t0,
+#tic_t1,
+#tic_t2,
+#tic_t3,
+#tic_t4,
+#tic_t7,
+#tic_t12,
+#tic_t17,
+#tic_t22,
+#tic_i0,
+#tic_i1,
+#tic_i2,
+#tic_i3,
+#tic_i4,
+#tic_i7,
+#tic_i12,
+#tic_i17,
+#tic_i20,
+#tic_i21,
+#tic_i22,
+#tic_i24,
+#tic_i23,
+#tic_c1,
+#tic_c2,
+#tic_c3,
+#tic_c4,
+#tic_c5,
+#tic_c10,
+#tic_c15,
+#tic_c21,
+#tic_c22,
+#tic_c23,
+#tic_c24 {
+  animation: tic 10s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes tac {
+  0% {
+    background-color: #1dfe19;
+  }
+
+  10% {
+    background-color: #34f217;
+  }
+
+  20% {
+    background-color: #6ce416;
+  }
+
+  30% {
+    background-color: #47d816;
+  }
+
+  40% {
+    background-color: #42cb15;
+  }
+
+  50% {
+    background-color: #13ba1e;
+  }
+
+  60% {
+    background-color: #27cb15;
+  }
+
+  70% {
+    background-color: #30d816;
+  }
+
+  80% {
+    background-color: #31e416;
+  }
+
+  90% {
+    background-color: #46f217;
+  }
+
+  100% {
+    background-color: #1dfe19;
+  }
+}
+
+#tac_t0,
+#tac_t1,
+#tac_t2,
+#tac_t3,
+#tac_t4,
+#tac_t7,
+#tac_t12,
+#tac_t17,
+#tac_t22,
+#tac_a0,
+#tac_a1,
+#tac_a2,
+#tac_a3,
+#tac_a4,
+#tac_a5,
+#tac_a9,
+#tac_a10,
+#tac_a11,
+#tac_a12,
+#tac_a13,
+#tac_a14,
+#tac_a15,
+#tac_a19,
+#tac_a20,
+#tac_a24,
+#tac_c1,
+#tac_c2,
+#tac_c3,
+#tac_c4,
+#tac_c5,
+#tac_c10,
+#tac_c15,
+#tac_c21,
+#tac_c22,
+#tac_c23,
+#tac_c24 {
+  animation: tac 10s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes toe {
+  0% {
+    background-color: #7304fb;
+  }
+
+  10% {
+    background-color: #6b01eb;
+  }
+
+  20% {
+    background-color: #6500df;
+  }
+
+  30% {
+    background-color: #6500cb;
+  }
+
+  40% {
+    background-color: #6000c1;
+  }
+
+  50% {
+    background-color: rgb(98, 0, 196);
+  }
+
+  60% {
+    background-color: #6000c1;
+  }
+
+  70% {
+    background-color: #6500cb;
+  }
+
+  80% {
+    background-color: #6500df;
+  }
+
+  90% {
+    background-color: #6b01eb;
+  }
+
+  100% {
+    background-color: #7304fb;
+  }
+}
+
+#toe_t0,
+#toe_t1,
+#toe_t2,
+#toe_t3,
+#toe_t4,
+#toe_t7,
+#toe_t12,
+#toe_t17,
+#toe_t22,
+#toe_o1,
+#toe_o2,
+#toe_o3,
+#toe_o5,
+#toe_o9,
+#toe_o10,
+#toe_o14,
+#toe_o15,
+#toe_o19,
+#toe_o21,
+#toe_o22,
+#toe_o23,
+#toe_e0,
+#toe_e1,
+#toe_e2,
+#toe_e3,
+#toe_e4,
+#toe_e5,
+#toe_e10,
+#toe_e11,
+#toe_e12,
+#toe_e15,
+#toe_e20,
+#toe_e21,
+#toe_e22,
+#toe_e23,
+#toe_e24 {
+  animation: toe 10s infinite;
+  animation-direction: alternate;
+}
