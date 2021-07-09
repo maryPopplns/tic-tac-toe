@@ -1,4 +1,5 @@
 import { TILES } from "./tiles.js";
+import { unique } from "./unique.js";
 
 function animator() {
   TILES.map((e) => {
@@ -19,22 +20,38 @@ function animator() {
     });
   })();
 
-  const COLORED = Array.from(document.querySelectorAll(".colored")).map((e) => {
+  const CLICKED = Array.from(document.querySelectorAll(".colored")).map((e) => {
     e.addEventListener("click", (e) => {
       const TARGET = document.querySelector(`#${e.target.id}`);
-      const ANIMATION_NAME = TARGET.getAnimations()[0].animationName;
-      TARGET.style.animation = "var(--clicked)";
-      setTimeout(() => {
-        TARGET.style.animation = `var(--${ANIMATION_NAME})`;
-      }, 750);
+      const NAMES = ["tic", "tac", "toe"];
+      const RANDOM = NAMES[Math.floor(Math.random() * 3)];
+      TARGET.style.animation = `var(--${RANDOM})`;
     });
   });
 
-  // const FLICKER = setInterval(() => {
-  //   const RANDOM_ID = TILES[Math.floor(Math.random() * TILES.length)];
-  //   const TILE = document.querySelector(RANDOM_ID);
-  //   console.log(TILE);
-  // }, 1000);
+  setTimeout(() => {
+    const FLICKER = setInterval(() => {
+      const SET = unique(15);
+      console.log(SET);
+      for (let i = 0; i < SET.length; i++) {
+        const RANDOM_ID = TILES[SET[i]];
+        // <-->
+        const TILE = document.querySelector(RANDOM_ID);
+        const ANIMATION_NAME = TILE.getAnimations()[0].animationName;
+        if (ANIMATION_NAME === "tic") {
+          TILE.style.animation = "var(--tac)";
+        } else if (ANIMATION_NAME === "tac") {
+          TILE.style.animation = "var(--toe)";
+        } else {
+          TILE.style.animation = "var(--tic)";
+        }
+        setTimeout(() => {
+          TILE.style.animation = `var(--${ANIMATION_NAME})`;
+        }, 800);
+      }
+      // <-->
+    }, 2000);
+  }, 4500);
 }
 
 export { animator };

@@ -12,7 +12,7 @@ body {
 }
 
 .grid_tile:hover {
-  opacity: 30%;
+  opacity: 50%;
 }
 
 @keyframes clicked {
@@ -22,89 +22,6 @@ body {
 }
 
 @keyframes tic {
-  0% {
-    background-color: hsl(58, 100%, 50%, 1);
-  }
-
-  10% {
-    background-color: hsl(58, 100%, 50%, 0.95);
-  }
-
-  20% {
-    background-color: hsl(58, 100%, 50%, 0.9);
-  }
-
-  30% {
-    background-color: hsl(58, 100%, 50%, 0.85);
-  }
-
-  40% {
-    background-color: hsl(58, 100%, 50%, 0.8);
-  }
-
-  50% {
-    background-color: hsl(58, 100%, 50%, 0.75);
-  }
-
-  60% {
-    background-color: hsl(58, 100%, 50%, 0.8);
-  }
-
-  70% {
-    background-color: hsl(58, 100%, 50%, 0.85);
-  }
-
-  80% {
-    background-color: hsl(58, 100%, 50%, 0.9);
-  }
-
-  90% {
-    background-color: hsl(58, 100%, 50%, 0.95);
-  }
-
-  100% {
-    background-color: hsl(58, 100%, 50%, 1);
-  }
-}
-
-#tic_t0,
-#tic_t1,
-#tic_t2,
-#tic_t3,
-#tic_t4,
-#tic_t7,
-#tic_t12,
-#tic_t17,
-#tic_t22,
-#tic_i0,
-#tic_i1,
-#tic_i2,
-#tic_i3,
-#tic_i4,
-#tic_i7,
-#tic_i12,
-#tic_i17,
-#tic_i20,
-#tic_i21,
-#tic_i22,
-#tic_i24,
-#tic_i23,
-#tic_c1,
-#tic_c2,
-#tic_c3,
-#tic_c4,
-#tic_c5,
-#tic_c10,
-#tic_c15,
-#tic_c21,
-#tic_c22,
-#tic_c23,
-#tic_c24 {
-  animation: var(--tic);
-  animation-direction: var(--animation-direction);
-}
-
-@keyframes tac {
   0% {
     background-color: hsl(119, 100%, 50%, 1);
   }
@@ -147,6 +64,89 @@ body {
 
   100% {
     background-color: hsl(119, 100%, 50%, 1);
+  }
+}
+
+#tic_t0,
+#tic_t1,
+#tic_t2,
+#tic_t3,
+#tic_t4,
+#tic_t7,
+#tic_t12,
+#tic_t17,
+#tic_t22,
+#tic_i0,
+#tic_i1,
+#tic_i2,
+#tic_i3,
+#tic_i4,
+#tic_i7,
+#tic_i12,
+#tic_i17,
+#tic_i20,
+#tic_i21,
+#tic_i22,
+#tic_i24,
+#tic_i23,
+#tic_c1,
+#tic_c2,
+#tic_c3,
+#tic_c4,
+#tic_c5,
+#tic_c10,
+#tic_c15,
+#tic_c21,
+#tic_c22,
+#tic_c23,
+#tic_c24 {
+  animation: var(--tic);
+  animation-direction: var(--animation-direction);
+}
+
+@keyframes tac {
+  0% {
+    background-color: hsl(58, 100%, 50%, 1);
+  }
+
+  10% {
+    background-color: hsl(58, 100%, 50%, 0.95);
+  }
+
+  20% {
+    background-color: hsl(58, 100%, 50%, 0.9);
+  }
+
+  30% {
+    background-color: hsl(58, 100%, 50%, 0.85);
+  }
+
+  40% {
+    background-color: hsl(58, 100%, 50%, 0.8);
+  }
+
+  50% {
+    background-color: hsl(58, 100%, 50%, 0.75);
+  }
+
+  60% {
+    background-color: hsl(58, 100%, 50%, 0.8);
+  }
+
+  70% {
+    background-color: hsl(58, 100%, 50%, 0.85);
+  }
+
+  80% {
+    background-color: hsl(58, 100%, 50%, 0.9);
+  }
+
+  90% {
+    background-color: hsl(58, 100%, 50%, 0.95);
+  }
+
+  100% {
+    background-color: hsl(58, 100%, 50%, 1);
   }
 }
 
