@@ -1,7 +1,6 @@
 @media (min-height: 450px) and (min-width: 450px) {
   #landing {
     width: 700px;
-    width: 670px;
   }
 
   .ttt_letters {
@@ -17,7 +16,6 @@
 @media (max-height: 450px) and (min-width: 850px) {
   #landing {
     width: 700px;
-    width: 670px;
   }
 
   .ttt_letters {

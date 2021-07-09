@@ -7,7 +7,7 @@
   --animation-direction: alternate;
 }
 
-.grid_tile {
+body {
   cursor: crosshair;
 }
 
@@ -23,47 +23,47 @@
 
 @keyframes tic {
   0% {
-    background-color: #fef619;
+    background-color: hsl(58, 100%, 50%, 1);
   }
 
   10% {
-    background-color: #f2eb17;
+    background-color: hsl(58, 100%, 50%, 0.95);
   }
 
   20% {
-    background-color: #e4de16;
+    background-color: hsl(58, 100%, 50%, 0.9);
   }
 
   30% {
-    background-color: #d8d216;
+    background-color: hsl(58, 100%, 50%, 0.85);
   }
 
   40% {
-    background-color: #cbc515;
+    background-color: hsl(58, 100%, 50%, 0.8);
   }
 
   50% {
-    background-color: #bab413;
+    background-color: hsl(58, 100%, 50%, 0.75);
   }
 
   60% {
-    background-color: #cbc515;
+    background-color: hsl(58, 100%, 50%, 0.8);
   }
 
   70% {
-    background-color: #d8d216;
+    background-color: hsl(58, 100%, 50%, 0.85);
   }
 
   80% {
-    background-color: #e4de16;
+    background-color: hsl(58, 100%, 50%, 0.9);
   }
 
   90% {
-    background-color: #f2eb17;
+    background-color: hsl(58, 100%, 50%, 0.95);
   }
 
   100% {
-    background-color: #fef619;
+    background-color: hsl(58, 100%, 50%, 1);
   }
 }
 
@@ -106,47 +106,47 @@
 
 @keyframes tac {
   0% {
-    background-color: #1dfe19;
+    background-color: hsl(119, 100%, 50%, 1);
   }
 
   10% {
-    background-color: #34f217;
+    background-color: hsl(119, 100%, 50%, 0.95);
   }
 
   20% {
-    background-color: #6ce416;
+    background-color: hsl(119, 100%, 50%, 0.9);
   }
 
   30% {
-    background-color: #47d816;
+    background-color: hsl(119, 100%, 50%, 0.85);
   }
 
   40% {
-    background-color: #42cb15;
+    background-color: hsl(119, 100%, 50%, 0.8);
   }
 
   50% {
-    background-color: #13ba1e;
+    background-color: hsl(119, 100%, 50%, 0.75);
   }
 
   60% {
-    background-color: #27cb15;
+    background-color: hsl(119, 100%, 50%, 0.8);
   }
 
   70% {
-    background-color: #30d816;
+    background-color: hsl(119, 100%, 50%, 0.85);
   }
 
   80% {
-    background-color: #31e416;
+    background-color: hsl(119, 100%, 50%, 0.9);
   }
 
   90% {
-    background-color: #46f217;
+    background-color: hsl(119, 100%, 50%, 0.95);
   }
 
   100% {
-    background-color: #1dfe19;
+    background-color: hsl(119, 100%, 50%, 1);
   }
 }
 
@@ -192,47 +192,47 @@
 
 @keyframes toe {
   0% {
-    background-color: #7304fb;
+    background-color: rgb(251, 4, 41);
   }
 
   10% {
-    background-color: #6b01eb;
+    background-color: rgb(251, 4, 41, 0.95);
   }
 
   20% {
-    background-color: #6500df;
+    background-color: rgb(251, 4, 41, 0.9);
   }
 
   30% {
-    background-color: #6500cb;
+    background-color: rgb(251, 4, 41, 0.85);
   }
 
   40% {
-    background-color: #6000c1;
+    background-color: rgb(251, 4, 41, 0.8);
   }
 
   50% {
-    background-color: rgb(98, 0, 196);
+    background-color: rgb(251, 4, 41, 0.75);
   }
 
   60% {
-    background-color: #6000c1;
+    background-color: rgb(251, 4, 41, 0.8);
   }
 
   70% {
-    background-color: #6500cb;
+    background-color: rgb(251, 4, 41, 0.85);
   }
 
   80% {
-    background-color: #6500df;
+    background-color: rgb(251, 4, 41, 0.9);
   }
 
   90% {
-    background-color: #6b01eb;
+    background-color: rgb(251, 4, 41, 0.95);
   }
 
   100% {
-    background-color: #7304fb;
+    background-color: rgb(251, 4, 41);
   }
 }
 
