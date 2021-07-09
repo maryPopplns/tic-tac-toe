@@ -24,8 +24,14 @@ function animator() {
     e.addEventListener("click", (e) => {
       const TARGET = document.querySelector(`#${e.target.id}`);
       const NAMES = ["tic", "tac", "toe"];
-      const RANDOM = NAMES[Math.floor(Math.random() * 3)];
-      TARGET.style.animation = `var(--${RANDOM})`;
+
+      if (TARGET.style.animation === "var(--tic)") {
+        TARGET.style.animation = `var(--tac)`;
+      } else if (TARGET.style.animation === "var(--tac)") {
+        TARGET.style.animation = `var(--toe)`;
+      } else {
+        TARGET.style.animation = `var(--tic)`;
+      }
     });
   });
 
