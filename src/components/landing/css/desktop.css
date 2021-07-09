@@ -13,3 +13,19 @@
     margin: 20px;
   }
 }
+
+@media (max-height: 450px) and (min-width: 850px) {
+  #landing {
+    width: 700px;
+    width: 670px;
+  }
+
+  .ttt_letters {
+    height: 175px;
+    margin: 15px;
+    width: 175px;
+  }
+  .ttt_containers {
+    margin: 20px;
+  }
+}
