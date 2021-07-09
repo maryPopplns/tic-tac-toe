@@ -1,3 +1,10 @@
+:root {
+  --animation: tic 3s infinite;
+  --animation1: tac 3s infinite;
+  --animation2: toe 3s infinite;
+  --animation-direction: alternate;
+}
+
 .grid_tile {
   cursor: crosshair;
 }
@@ -85,8 +92,8 @@
 #tic_c22,
 #tic_c23,
 #tic_c24 {
-  animation: tic 10s infinite;
-  animation-direction: alternate;
+  animation: var(--animation);
+  animation-direction: var(--animation-direction);
 }
 
 @keyframes tac {
@@ -171,8 +178,8 @@
 #tac_c22,
 #tac_c23,
 #tac_c24 {
-  animation: tac 10s infinite;
-  animation-direction: alternate;
+  animation: var(--animation1);
+  animation-direction: var(--animation-direction);
 }
 
 @keyframes toe {
@@ -257,6 +264,6 @@
 #toe_e22,
 #toe_e23,
 #toe_e24 {
-  animation: toe 10s infinite;
-  animation-direction: alternate;
+  animation: var(--animation2);
+  animation-direction: var(--animation-direction);
 }

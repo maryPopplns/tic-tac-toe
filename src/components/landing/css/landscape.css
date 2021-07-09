@@ -1,15 +1,16 @@
 /* @media (max-height: 450px) and (max-width: 850px) { */
 @media (max-height: 450px) {
   #landing {
-    width: 70vw;
+    width: 55vw;
   }
 
   .ttt_containers {
-    margin: 10px;
+    margin: -5px;
   }
 
   .ttt_letters {
-    height: 20vh;
-    width: 20vw;
+    margin: 10px;
+    height: 25vh;
+    width: 25vw;
   }
 }
