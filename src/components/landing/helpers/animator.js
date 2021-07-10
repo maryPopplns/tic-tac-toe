@@ -36,13 +36,11 @@ function animator() {
 
   setTimeout(() => {
     const FLICKER = setInterval(() => {
-      const SET = unique(20);
+      const SET = unique(10);
       for (let i = 0; i < SET.length; i++) {
         const RANDOM_ID = TILES[SET[i]];
-        // <-->
         const TILE = document.querySelector(RANDOM_ID);
         const ANIMATION_NAME = TILE.getAnimations()[0].animationName;
-        // console.log(ANIMATION_NAME);
         if (ANIMATION_NAME === "tic") {
           TILE.style.animation = "var(--tac)";
         } else if (ANIMATION_NAME === "tac") {

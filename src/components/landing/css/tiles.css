@@ -7,10 +7,6 @@
   --animation-direction: alternate;
 }
 
-body {
-  cursor: crosshair;
-}
-
 .grid_tile:hover {
   opacity: 50%;
 }

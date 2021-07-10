@@ -26,6 +26,29 @@ body {
   gap: 1px;
 }
 
-.grid_tile {
-  border-radius: 0.6em;
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+#player_vs_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player_vs_player {
+  border-radius: 1em;
+  border-top: 2px solid white;
+  border-right: 4px solid white;
+}
+
+#player_vs_computer {
+  border-radius: 1em;
+  border-bottom: 2px solid white;
+  border-left: 4px solid white;
 }

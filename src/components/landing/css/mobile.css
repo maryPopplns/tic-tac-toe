@@ -4,12 +4,28 @@
   }
 
   .ttt_letters {
-    margin: 20px 10px;
+    margin: 4vh 2vw;
     height: 15vh;
     width: 30vw;
   }
 
   .grid_tile {
     border-radius: 0.3em;
+  }
+
+  #player_vs_container {
+    width: 90vw;
+    height: 25vh;
+    margin: auto;
+  }
+
+  .button {
+    font-size: 0.8em;
+    height: 10em;
+    width: 12em;
+  }
+
+  .game_modes {
+    margin: 3px;
   }
 }
