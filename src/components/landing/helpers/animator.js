@@ -36,7 +36,8 @@ function animator() {
 
   setTimeout(() => {
     const FLICKER = setInterval(() => {
-      const SET = unique(4);
+      const RANDOM_NUM = Math.floor(Math.random() * 40) + 1;
+      const SET = unique(RANDOM_NUM);
       for (let i = 0; i < SET.length; i++) {
         const RANDOM_ID = TILES[SET[i]];
         const TILE = document.querySelector(RANDOM_ID);
@@ -50,9 +51,9 @@ function animator() {
         }
 
         // <-no perm change on tiles->
-        // setTimeout(() => {
-        //   TILE.style.animation = `var(--${ANIMATION_NAME})`;
-        // }, 800);
+        setTimeout(() => {
+          TILE.style.animation = `var(--${ANIMATION_NAME})`;
+        }, 700);
       }
       // <-->
     }, 1500);

@@ -2,6 +2,7 @@ import { grid } from "./helpers/grid.js";
 import { animator } from "./helpers/animator.js";
 import { TILES } from "./helpers/tiles.js";
 import { player_vs } from "./helpers/player_vs.js";
+import { event_listeners } from "./helpers/event_listeners.js";
 import {
   LANDING,
   TIC,
@@ -51,7 +52,10 @@ function landing() {
 
   grid();
   animator();
-  setTimeout(() => player_vs(), 4000);
+  setTimeout(() => {
+    player_vs();
+    event_listeners();
+  }, 4000);
 }
 
 export { landing };
