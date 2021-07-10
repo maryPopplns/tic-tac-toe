@@ -22,7 +22,7 @@ function flicker_start() {
         // <-no perm change on tiles->
         setTimeout(() => {
           TILE.style.animation = `var(--${ANIMATION_NAME})`;
-        }, 800);
+        }, 900);
       }
     }, 1500);
   }, 2500);
