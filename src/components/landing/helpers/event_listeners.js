@@ -11,12 +11,10 @@ function event_listeners() {
     LANDING.remove();
     BUTTONS_CONTAINER.remove();
     flicker_stop();
-    // setTimeout(() => {
-    //   location.reload();
-    //   landing();
-    //   flicker_start();
-    // }, 500);
-    // <--create logic to set the all the tiles the correct color-->
+    // <-->
+    // location.reload();
+    // landing();
+    // flicker_start();
   }
 
   PVP.addEventListener("click", () => {
