@@ -38,6 +38,8 @@
   }
 }
 
+/* <--> */
+
 @media (max-height: 450px) and (min-width: 850px) {
   #landing {
     width: 700px;

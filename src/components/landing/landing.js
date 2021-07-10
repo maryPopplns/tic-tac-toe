@@ -51,7 +51,7 @@ function landing() {
 
   grid();
   animator();
-  setTimeout(() => player_vs(), 4500);
+  setTimeout(() => player_vs(), 4000);
 }
 
 export { landing };
