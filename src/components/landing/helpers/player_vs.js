@@ -24,12 +24,12 @@ function player_vs() {
   PLAYER_VS_CONTAINER.setAttribute("id", "player_vs_container");
   P_V_P.setAttribute("id", "player_vs_player");
   P_V_P.setAttribute("class", "button");
-  P_V_P_TEXT_P.textContent = "P";
+  P_V_P_TEXT_P.textContent = "PLAYER";
   P_V_P_TEXT_VS.textContent = "VS";
-  P_V_P_TEXT_P2.textContent = "P";
+  P_V_P_TEXT_P2.textContent = "PLAYER";
   P_V_C.setAttribute("id", "player_vs_computer");
   P_V_C.setAttribute("class", "button");
-  P_V_C_TEXT_P.textContent = "P";
+  P_V_C_TEXT_P.textContent = "PLAYER";
   P_V_C_TEXT_VS.textContent = "VS";
   P_V_C_TEXT_AI.textContent = "AI";
 
