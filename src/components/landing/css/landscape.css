@@ -6,11 +6,17 @@
 
   .ttt_letters {
     margin: 5px 10px;
-    height: 20vh;
-    width: 20vw;
+    height: 18vh;
+    width: 18vw;
   }
 
   .grid_tile {
     border-radius: 0.2em;
+  }
+
+  .button {
+    font-size: 1.2em;
+    margin: 25px 20px;
+    padding: 0px 15px;
   }
 }

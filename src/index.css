@@ -1,2 +1,7 @@
 @import "reset.css";
 @import "./components/landing/css/index.css";
+
+body {
+  cursor: crosshair;
+  /* cursor: url(""); */
+}

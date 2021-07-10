@@ -4,12 +4,37 @@
   }
 
   .ttt_letters {
-    height: 175px;
+    --container: 6em;
+    height: var(--container);
+    width: var(--container);
     margin: 15px;
-    width: 175px;
   }
+
   .ttt_containers {
     margin: 20px;
+  }
+
+  .grid_tile {
+    border-radius: 0.2em;
+  }
+
+  #player_vs_container {
+    display: flex;
+    justify-content: center;
+    width: 24em;
+    height: 8em;
+    margin: 50px auto;
+  }
+
+  .button {
+    font-size: 1.2em;
+    border-top: var(--button);
+    height: 8em;
+    width: 12em;
+  }
+
+  .game_modes {
+    margin: 5px;
   }
 }
 
@@ -19,11 +44,36 @@
   }
 
   .ttt_letters {
-    height: 175px;
+    --container: 6em;
+    height: var(--container);
+    width: var(--container);
     margin: 15px;
-    width: 175px;
   }
+
   .ttt_containers {
     margin: 20px;
+  }
+
+  .grid_tile {
+    border-radius: 0.2em;
+  }
+
+  #player_vs_container {
+    display: flex;
+    justify-content: center;
+    width: 24em;
+    height: 8em;
+    margin: 50px auto;
+  }
+
+  .button {
+    font-size: 1.2em;
+    border-top: var(--button);
+    height: 8em;
+    width: 12em;
+  }
+
+  .game_modes {
+    margin: 5px;
   }
 }
