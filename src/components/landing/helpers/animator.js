@@ -35,7 +35,7 @@ function animator() {
   });
 
   setTimeout(() => {
-    const FLICKER = setInterval(() => {
+    var FLICKER = setInterval(() => {
       const RANDOM_NUM = Math.floor(Math.random() * 40) + 1;
       const SET = unique(RANDOM_NUM);
       for (let i = 0; i < SET.length; i++) {
@@ -53,11 +53,11 @@ function animator() {
         // <-no perm change on tiles->
         setTimeout(() => {
           TILE.style.animation = `var(--${ANIMATION_NAME})`;
-        }, 700);
+        }, 800);
       }
       // <-->
     }, 1500);
-  }, 2000);
+  }, 2500);
 }
 
 export { animator };
