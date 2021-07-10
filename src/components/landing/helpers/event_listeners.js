@@ -9,9 +9,9 @@ function event_listeners() {
   function remove_UI() {
     LANDING.remove();
     BUTTONS_CONTAINER.remove();
-    // setTimeout(() => {
-    //   landing();
-    // }, 1000);
+    setTimeout(() => {
+      landing();
+    }, 1000);
   }
 
   PVP.addEventListener("click", () => {
