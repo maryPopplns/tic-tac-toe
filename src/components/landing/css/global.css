@@ -36,9 +36,61 @@ body {
 }
 
 #player_vs_container {
+  cursor: grab;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes pvp {
+  0% {
+    background-color: hsl(119, 100%, 50%, 1);
+  }
+
+  10% {
+    background-color: hsl(119, 100%, 50%, 0.95);
+  }
+
+  20% {
+    background-color: hsl(119, 100%, 50%, 0.9);
+  }
+
+  30% {
+    background-color: hsl(119, 100%, 50%, 0.85);
+  }
+
+  40% {
+    background-color: hsl(119, 100%, 50%, 0.8);
+  }
+
+  50% {
+    background-color: hsl(119, 100%, 50%, 0.75);
+  }
+
+  60% {
+    background-color: hsl(119, 100%, 50%, 0.8);
+  }
+
+  70% {
+    background-color: hsl(119, 100%, 50%, 0.85);
+  }
+
+  80% {
+    background-color: hsl(119, 100%, 50%, 0.9);
+  }
+
+  90% {
+    background-color: hsl(119, 100%, 50%, 0.95);
+  }
+
+  100% {
+    background-color: hsl(119, 100%, 50%, 1);
+  }
 }
 
 #player_vs_player {
@@ -47,8 +99,64 @@ body {
   border-right: 4px solid white;
 }
 
+#player_vs_player:hover {
+  animation: pvp 1.5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pvc {
+  0% {
+    background-color: rgb(251, 4, 41);
+  }
+
+  10% {
+    background-color: rgb(251, 4, 41, 0.95);
+  }
+
+  20% {
+    background-color: rgb(251, 4, 41, 0.9);
+  }
+
+  30% {
+    background-color: rgb(251, 4, 41, 0.85);
+  }
+
+  40% {
+    background-color: rgb(251, 4, 41, 0.8);
+  }
+
+  50% {
+    background-color: rgb(251, 4, 41, 0.75);
+  }
+
+  60% {
+    background-color: rgb(251, 4, 41, 0.8);
+  }
+
+  70% {
+    background-color: rgb(251, 4, 41, 0.85);
+  }
+
+  80% {
+    background-color: rgb(251, 4, 41, 0.9);
+  }
+
+  90% {
+    background-color: rgb(251, 4, 41, 0.95);
+  }
+
+  100% {
+    background-color: rgb(251, 4, 41);
+  }
+}
+
 #player_vs_computer {
   border-radius: 1em;
   border-bottom: 2px solid white;
   border-left: 4px solid white;
+}
+
+#player_vs_computer:hover {
+  animation: pvc 1.5s infinite;
+  animation-direction: alternate;
 }

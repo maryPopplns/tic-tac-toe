@@ -36,7 +36,7 @@ function animator() {
 
   setTimeout(() => {
     const FLICKER = setInterval(() => {
-      const SET = unique(10);
+      const SET = unique(4);
       for (let i = 0; i < SET.length; i++) {
         const RANDOM_ID = TILES[SET[i]];
         const TILE = document.querySelector(RANDOM_ID);

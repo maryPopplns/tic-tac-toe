@@ -8,14 +8,14 @@ function player_vs() {
   const P_V_C = document.createElement("div");
   const P_V_C_TEXT_P = document.createElement("div");
   const P_V_C_TEXT_VS = document.createElement("div");
-  const P_V_C_TEXT_COMPUTER = document.createElement("div");
+  const P_V_C_TEXT_AI = document.createElement("div");
   const GAME_MODES = [
     P_V_P_TEXT_P,
     P_V_P_TEXT_VS,
     P_V_P_TEXT_P2,
     P_V_C_TEXT_P,
     P_V_C_TEXT_VS,
-    P_V_C_TEXT_COMPUTER,
+    P_V_C_TEXT_AI,
   ];
 
   GAME_MODES.map((e) => {
@@ -31,7 +31,7 @@ function player_vs() {
   P_V_C.setAttribute("class", "button");
   P_V_C_TEXT_P.textContent = "P";
   P_V_C_TEXT_VS.textContent = "VS";
-  P_V_C_TEXT_COMPUTER.textContent = "COMPUTER";
+  P_V_C_TEXT_AI.textContent = "AI";
 
   LANDING.append(PLAYER_VS_CONTAINER);
   PLAYER_VS_CONTAINER.append(P_V_P);
@@ -41,7 +41,7 @@ function player_vs() {
   PLAYER_VS_CONTAINER.append(P_V_C);
   P_V_C.append(P_V_C_TEXT_P);
   P_V_C.append(P_V_C_TEXT_VS);
-  P_V_C.append(P_V_C_TEXT_COMPUTER);
+  P_V_C.append(P_V_C_TEXT_AI);
 }
 
 export { player_vs };
