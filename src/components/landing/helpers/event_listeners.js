@@ -1,4 +1,5 @@
 import { landing } from "../landing.js";
+import { flicker_stop, flicker_start } from "./flicker.js";
 
 function event_listeners() {
   const PVP = document.querySelector("#player_vs_player");
@@ -9,9 +10,13 @@ function event_listeners() {
   function remove_UI() {
     LANDING.remove();
     BUTTONS_CONTAINER.remove();
+    flicker_stop();
     // setTimeout(() => {
+    //   location.reload();
     //   landing();
-    // }, 1000);
+    //   flicker_start();
+    // }, 500);
+    // <--create logic to set the all the tiles the correct color-->
   }
 
   PVP.addEventListener("click", () => {
